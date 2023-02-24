@@ -1,0 +1,51 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://scene/world/ground.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scene/world/obstacle.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scene/player/player.tscn" type="PackedScene" id=3]
+
+[node name="World" type="Spatial"]
+
+[node name="Gound" parent="." instance=ExtResource( 1 )]
+transform = Transform( 50, 0, 0, 0, 0.2, 0, 0, 0, 50, 0, 0, 0 )
+
+[node name="Obstacle" type="Spatial" parent="."]
+
+[node name="Obstacle" parent="Obstacle" instance=ExtResource( 2 )]
+transform = Transform( 4.06975, 0, 0, 0, 4.67639, 0, 0, 0, 1.49336, 0.815791, 0, -9.83591 )
+
+[node name="Obstacle12" parent="Obstacle" instance=ExtResource( 2 )]
+transform = Transform( 2.94183, 0.0702663, 0.886139, -1.21455, 0.211402, 0.0418653, -1.34117, -0.0373152, 1.90582, -31.5483, 17.2706, 28.305 )
+
+[node name="Obstacle11" parent="Obstacle" instance=ExtResource( 2 )]
+transform = Transform( 4.80294, 0, 0, 0, 0.366327, 0, 0, 0, 0.134748, -11.278, 11.7705, 39.3889 )
+
+[node name="Obstacle10" parent="Obstacle" instance=ExtResource( 2 )]
+transform = Transform( 4.05236, 0.26486, 0.0504061, 0, 6.20316, -3.32395, -0.375926, 2.8551, 0.543361, 11.559, 2.07428, 37.5647 )
+
+[node name="Obstacle5" parent="Obstacle" instance=ExtResource( 2 )]
+transform = Transform( 4.06975, 0, 0, 0, 2.21294, 0, 0, 0, 3.72162, 0.815791, 0, 12.5384 )
+
+[node name="Obstacle6" parent="Obstacle" instance=ExtResource( 2 )]
+transform = Transform( 2.98329, 0, 0, 0, 1.29152, 0, 0, 0, 3.19696, 0.815791, 2.61178, 12.5384 )
+
+[node name="Obstacle7" parent="Obstacle" instance=ExtResource( 2 )]
+transform = Transform( 2.00444, 0, 0, 0, 1.30107, 0, 0, 0, 1.48123, 0.815791, 4.42044, 12.5384 )
+
+[node name="Obstacle8" parent="Obstacle" instance=ExtResource( 2 )]
+transform = Transform( 1.11737, 0, 0, 0, 2.87558, 0, 0, 0, 0.796474, 0.815791, 6.16433, 12.5425 )
+
+[node name="Obstacle9" parent="Obstacle" instance=ExtResource( 2 )]
+transform = Transform( 0.514229, 0, 0, 0, 24.4868, 0, 0, 0, 0.393155, 0.815791, 6.16433, 12.5425 )
+
+[node name="Obstacle2" parent="Obstacle" instance=ExtResource( 2 )]
+transform = Transform( 3.00376, -1.14293, -1.0767, 1.18856, 6.62112, -0.270284, 2.80577, -0.233023, 1.07917, 18.5535, 0.621441, -3.23817 )
+
+[node name="Obstacle3" parent="Obstacle" instance=ExtResource( 2 )]
+transform = Transform( 2.74305, 0.590396, -1.95889, -1.23705, 5.97214, 0.408318, 4.66795, 0.584239, 0.173941, 26.6074, 1.95245, 11.9083 )
+
+[node name="Obstacle4" parent="Obstacle" instance=ExtResource( 2 )]
+transform = Transform( -3.88114, -0.921719, -0.563566, -0.910264, 4.91602, 0.08272, 3.29619, -0.18613, -1.34789, 26.7622, 3.9596, 28.4679 )
+
+[node name="Player" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.178285, 0 )
